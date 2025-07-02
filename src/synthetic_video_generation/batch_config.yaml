@@ -1,0 +1,56 @@
+# ---------- Blender Executable ----------
+blender_executable: "/Applications/Blender.app/Contents/MacOS/Blender"
+
+# ---------- Python Site-Packages ----------
+site_packages_path: "/Users/giovannagirotto/.local/lib/python3.11/site-packages"
+
+# ---------- Excel Source ----------
+excel_path: "../../support/ID_video_generation.xlsx"
+
+# ---------- Animation Settings ----------
+frame_start: 1
+frame_end: 100
+fps: 15
+angular_velocities: [0.5, 0.5, 1.5]
+
+# ---------- Range to Process ----------
+start_index: 108
+end_index: 216
+
+# ---------- Output Folder ----------
+output: "../../results"
+
+# ---------- Mapping Dictionaries ----------
+cubesat_file_map:
+  "1": "../../templates/blender_models/move1.blend"
+  "2": "../../templates/blender_models/move2.blend"
+  "3": "../../templates/blender_models/move3.blend"
+
+sun_energy_map:
+  "1": 0.5
+  "2": 5
+
+sun_angle_map:
+  "1": [1.5708, 0, 1.5708]
+  "2": [1.5708, 0, 0]
+  "3": [1.5708, 0, 0.7854]
+
+sat_movement_map:
+  "1": "Random"
+
+camera_distance_map:
+  "1": [1, 0, 0]
+  "2": [5, 0, 0]
+
+fov_map:
+  "1": 55
+
+noise_map:
+  "1": "None"
+  "2": "Salt"
+  "3": "Gaussian"
+
+background_image_path_map:
+  "1": "../../templates/backgrounds/plain_starfield_1.png"
+  "2": "../../templates/backgrounds/earth_nasa.jpg"
+  "3": "../../templates/backgrounds/full_earth.jpg"

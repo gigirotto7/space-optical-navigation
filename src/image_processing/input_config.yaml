@@ -1,0 +1,36 @@
+############ For main ###############
+
+# --------- Video & Output ---------
+video_path: "../../results/videos/11111113.mp4"
+# Path to the input video (relative to the script)
+
+output_excel_main: "testing_new.xlsx"
+# Output Excel file for results
+
+# --------- ROI Selection ---------
+pop_windows: false
+# Whether to display visualization windows during analysis
+
+
+
+
+
+
+############ For feature_automatic_generation ###############
+
+# --------- General Paths ---------
+excel_path: "../../support/ID_video_generation.xlsx"
+# Excel file with video output paths (one per row, column: 'output_path')
+
+base_video_path: "results"
+# Base path where rendered videos are located
+
+# --------- ROI Selection ---------
+use_manual_roi: true
+# If true, opens interactive ROI selector for the first video
+
+# --------- Output ---------
+output_excel: "methods_data.xlsx"
+# Path (or filename) to store the final analysis metrics
+
+

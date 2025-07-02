@@ -1,0 +1,37 @@
+# ---------- Blender Executable ----------
+
+blender_executable: "/Applications/Blender.app/Contents/MacOS/Blender"
+# Path to the Blender binary used to launch background rendering
+
+# ---------- Scene Configuration ----------
+
+sun_angle: [1.5708, 0, 1.5708]            # Sunlight direction in radians (x, y, z)
+sun_energy: 5                             # Intensity of sunlight
+
+sat_movement_mode: "Random"              # 'Random' or 'File' for CubeSat movement
+sat_file: null                            # CSV path if using 'File' movement mode
+
+camera_distance: [1.2, 0, 0]              # Camera offset from the CubeSat [x, y, z]
+fov: 55                                   # Camera Field of View in degrees
+
+# ---------- File Paths (relative to project root) ----------
+
+cubesat_file: "../../templates/blender_models/move3.blend"              # Path to the .blend file
+background_image_path: "../../templates/backgrounds/full_earth.jpg"     # Background image file
+output_video_path: "../../templates/results/move3.mp4"                  # Output path for rendered video
+corrupted_video_path: "../../templates/results/move3_corrupted.mp4"     # Path for noisy/corrupted video
+
+# ---------- Animation Settings ----------
+
+frame_start: 1
+frame_end: 100
+fps: 15                                 # Frames per second
+
+# ---------- Noise Type ----------
+
+noise: "Salt and Pepper"                # "Salt and Pepper", "Gaussian", or "None"
+
+# ---------- Python Site-Packages ----------
+
+site_packages_path: "/Users/giovannagirotto/.local/lib/python3.11/site-packages"
+# Path to your user-level site-packages, required for numpy/pandas inside Blender
